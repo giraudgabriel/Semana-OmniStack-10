@@ -14,7 +14,7 @@
 - Expo
 
 # Para executar:
-`git clone https://github.com/giraudgabriel/Multiroom-Chat.git``git clone https://github.com/giraudgabriel/Multiroom-Chat.git`
+`git clone https://github.com/giraudgabriel/Multiroom-Chat.git`
 <br>
 <br>
 # Web:
