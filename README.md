@@ -23,6 +23,9 @@ cd web
 yarn install
 yarn start
 ```
+
+
+<img src="images/web.png">
 <br>
 
 # Mobile:
@@ -31,15 +34,15 @@ cd mobile
 yarn install
 yarn start
 ```
-# Mobile:
-```
-cd mobile
-yarn install
-yarn start
-```
+<img src="images/mobile1.jpg">
+<img src="images/mobile2.jpg">
+<img src="images/mobile3.jpg">
+<img src="images/mobile4.jpg">
+<br>
 # Backend:
 ```
 cd backend
 yarn install
 yarn dev
 ```
+
