@@ -11,34 +11,35 @@
 - Node.js
 - Yarn
 - Git
+- Expo
 
 # Para executar:
-`git clone https://github.com/giraudgabriel/Multiroom-Chat.git`
+`git clone https://github.com/giraudgabriel/Multiroom-Chat.git``git clone https://github.com/giraudgabriel/Multiroom-Chat.git`
 <br>
-<br>
-# Web
-<br>
-<br>
-`cd web`
-<br>
-`yarn install`
-<br>
-`yarn start`
-<br>
-# Mobile
-<br>
-<br>
-`cd mobile`
-<br>
-`yarn install`
-<br>
-`yarn start`
 <br>
 # Web:
-<img src="images/web.png">
+```
+cd web
+yarn install
+yarn start
+```
+<br>
 
 # Mobile:
-<img src="images/mobile1.png">
-<img src="images/mobile2.png">
-<img src="images/mobile3.png">
-
+```
+cd mobile
+yarn install
+yarn start
+```
+# Mobile:
+```
+cd mobile
+yarn install
+yarn start
+```
+# Backend:
+```
+cd backend
+yarn install
+yarn dev
+```
