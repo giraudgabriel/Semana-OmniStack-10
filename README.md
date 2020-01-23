@@ -34,10 +34,10 @@ cd mobile
 yarn install
 yarn start
 ```
-<img src="images/mobile1.jpg">
-<img src="images/mobile2.jpg">
-<img src="images/mobile3.jpg">
-<img src="images/mobile4.jpg">
+<img src="images/mobile1.jpeg">
+<img src="images/mobile2.jpeg">
+<img src="images/mobile3.jpeg">
+<img src="images/mobile4.jpeg">
 <br>
 # Backend:
 ```
