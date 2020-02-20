@@ -13,6 +13,7 @@ function Main({navigation}) {
     const [techs, setTechs] = useState('');
     const [currentRegion,
         setCurrentRegion] = useState(null);
+    const [isInputFocused, setInputFocused] = useState(false);
 
     useEffect(() => {
         async function loadInitialPosition() {
@@ -37,6 +38,7 @@ function Main({navigation}) {
     }
 
     async function loadDevs(){
+        setInputFocused(false);
         const {latitude, longitude} = currentRegion;
         const response = await api.get('/search',{
             params:{
@@ -91,7 +93,9 @@ function Main({navigation}) {
                 </Marker> 
             ))}
         </MapView>
-        <View style={styles.searchForm}>
+        <View style={isInputFocused ? styles.searchFormTop : styles.searchForm} 
+                onFocus ={ () => setInputFocused(true)}
+                onBlur ={ () => setInputFocused(false)}>
             <TextInput 
                 style={styles.searchInput} 
                 placeholder="Buscar devs por techs..."
@@ -99,6 +103,7 @@ function Main({navigation}) {
                 autoCapitalize="words"
                 autoCorrect={false}
                 value={techs}
+                onSubmitEditing={loadDevs}
                 onChangeText={setTechs}
             />
             <TouchableOpacity onPress={loadDevs} style={styles.loadButton}> 
@@ -141,11 +146,19 @@ const styles = StyleSheet.create({
     },
     searchForm:{
         position:'absolute',
-        top:20,
+        bottom:120,
         left:20,
         right:20,
         zIndex:5,
         flexDirection:'row',
+    },
+    searchFormTop:{
+        position:'absolute',
+        top:20,
+        left:20,
+        right:20,
+        zIndex:5,
+        flexDirection:'row'
     },
     newForm:{
         position:'absolute',

@@ -9,13 +9,14 @@ const Routes = createAppContainer(createStackNavigator({
     Main: {
         screen: Main,
         navigationOptions: {
-            title: 'DevRadar'
+            title: 'DevRadar',
+            animationEnabled:true
         }
     },
     Profile: {
         screen: Profile,
         navigationOptions: {
-            title: 'Perfil no Github'
+            title: 'Perfil no Github',
         }
     },
     Dev:{
